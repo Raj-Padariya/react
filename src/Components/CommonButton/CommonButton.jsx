@@ -9,8 +9,8 @@ export default function CommonButton({ href, text, className = "", variant = "so
 
   return (
     <div className="inline-block">
-      <a href={href} className={`${baseStyles} ${variants[variant]} ${className}`} >
-        {text}
+      <a href={href || "#"} className={`${baseStyles} ${variants[variant]} ${className}`} >
+        {text || "Instant Quote"}
       </a>
     </div>
       );

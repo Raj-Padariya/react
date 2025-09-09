@@ -1,19 +1,24 @@
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Home from "./Pages/Home";
 import './App.css'
-import HeroBanner from './Components/HeroBanner/HeroBanner'
-import AboutUS from './Components/AboutUS/AboutUS'  
-import CleaningProcess from './Components/CleaningProcess/CleaningProcess'
-import CommonButton from './Components/CommonButton/CommonButton'  
 
 function App() {
 
   return (
-    <>
-      <CommonButton href="https://remote-labs.io/" text="Get Started" variant="solidbtn" />
-      <HeroBanner />
-      <AboutUS/>
-      <CleaningProcess/>
-    </>
+    <Router>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/get-started" element={<GetStarted />} /> */}
+        </Routes>
+      </main>
+    </Router>
   )
 }
 
