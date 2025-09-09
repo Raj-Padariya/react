@@ -1,4 +1,4 @@
-import Solidbtn from "../Solidbutton/Solidbtn";
+import CommonButton from "../CommonButton/CommonButton";
 import AboutUSImgone from '../../assets//images/about-img.png';
 export default function AboutUS() {
   return (
@@ -39,7 +39,7 @@ export default function AboutUS() {
           </div>
 
           {/* Button */}
-          <Solidbtn/>
+          <CommonButton/>
         </div>
 
         {/* Right Image Section */}
