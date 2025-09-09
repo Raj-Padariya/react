@@ -1,3 +1,63 @@
 @import "tailwindcss";
 
-body{background-color: bisque;}
+
+:root {
+  --gradiant-radial-color: radial-gradient(
+    88.37% 177.94% at 98.37% 100%, 
+    #E75658 0%, 
+    #E79F56 100%
+  );
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('./assets/Fonts/Mulish-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('./assets/Fonts/Mulish-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('./assets/Fonts/Mulish-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mulish';
+  src: url('./assets/Fonts/Mulish-Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('./assets/Fonts/Mulish-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('./assets/Fonts/Mulish-Ligth.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Castoro';
+  src: url('./assets/Fonts/Castoro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{background-color: bisque;font-family: 'Mulish';}
+.bg-radial {
+      background: var(--gradiant-radial-color);
+    }
