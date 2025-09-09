@@ -62,8 +62,8 @@
   font-style: normal;
 }
 
-body{background-color: bisque;font-family: 'Mulish';}
-.bg-radial {background: var(--gradiant-radial-color);}
+body{font-family: 'Mulish';}
+.bg-radial {background-image: var(--gradiant-radial-color);}
 .bg-radial:hover {
-  background: var(--gradiant-radial-color-reverse);
+  background-image: var(--gradiant-radial-color-reverse);
 }
