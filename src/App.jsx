@@ -1,13 +1,13 @@
 
 import './App.css'
 import HeroBanner from './Components/HeroBanner/HeroBanner'
-import Solidbtn from './Components/Solidbutton/Solidbtn'  
+import CommonButton from './Components/CommonButton/CommonButton'  
 
 function App() {
 
   return (
     <>
-      <Solidbtn href="https://remote-labs.io/" text="Get Started" variant="solidbtn" />
+      <CommonButton href="https://remote-labs.io/" text="Get Started" variant="solidbtn" />
       <HeroBanner />
     </>
   )

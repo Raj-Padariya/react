@@ -1,4 +1,4 @@
-export default function Solidbtn({ href, text, className = "", variant = "solidbtn" }) {
+export default function CommonButton({ href, text, className = "", variant = "solidbtn" }) {
   // Variants
   const baseStyles = "font-bold text-base leading-[22px] px-7 py-3.5 inline-block transition-all rounded-full duration-300";
 
