@@ -7,6 +7,11 @@
     #E75658 0%, 
     #E79F56 100%
   );
+  --gradiant-radial-color-reverse: radial-gradient(
+    88.37% 177.94% at 98.37% 100%, 
+    #E79F56 0%, 
+    #E75658 100%
+  );
 }
 
 @font-face {
@@ -57,7 +62,8 @@
   font-style: normal;
 }
 
-body{background-color: bisque;font-family: 'Mulish';}
-.bg-radial {
-      background: var(--gradiant-radial-color);
-    }
+body{font-family: 'Mulish';}
+.bg-radial {background-image: var(--gradiant-radial-color);}
+.bg-radial:hover {
+  background-image: var(--gradiant-radial-color-reverse);
+}
