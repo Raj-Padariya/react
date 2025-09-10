@@ -26,7 +26,7 @@ export default function Header() {
 };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50">
+    <header className="fixed top-7 left-0 w-full z-50">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="text-2xl font-bold text-gray-800">
@@ -64,44 +64,11 @@ export default function Header() {
       {/* Mobile Navigation */}
       <div id="mobile-menu" className="hidden md:hidden bg-white shadow-md">
         <nav className="flex flex-col space-y-4 px-6 py-4 font-medium text-gray-700">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              isActive ? "text-[#E79F56]" : "hover:text-[#E79F56]"
-            }
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              isActive ? "text-[#E79F56]" : "hover:text-[#E79F56]"
-            }
-          >
-            About
-          </NavLink>
-          <NavLink
-            to="/services"
-            className={({ isActive }) =>
-              isActive ? "text-[#E79F56]" : "hover:text-[#E79F56]"
-            }
-          >
-            Services
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              isActive ? "text-[#E79F56]" : "hover:text-[#E79F56]"
-            }
-          >
-            Contact
-          </NavLink>
-          <Link
-            to="/get-started"
-            className="bg-[radial-gradient(88.37%_177.94%_at_98.37%_100%,_#E79F56_0%,_#E75658_100%)] text-white px-6 py-2 rounded-full text-center font-semibold hover:opacity-90 transition"
-          >
-            Get Started
-          </Link>
+          <CustomNavLink to="/" withGradient>Home</CustomNavLink>
+          <CustomNavLink to="/about">About</CustomNavLink>
+          <CustomNavLink to="/services">Services</CustomNavLink>
+          <CustomNavLink to="/contact">Contact</CustomNavLink>
+          <CommonButton href="https://remotecleanacademy.com/privacy-policy/" variant="solidbtn" />
         </nav>
       </div>
     </header>
